@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:wght@100;200&display=swap');
+
+:root{
+    --Primary:#ffff;
+    --orange:rgb(240, 110, 23);
+    --letras:#101a38;
+    --bordes:rgba(240, 110, 23, 0.167);
+    --poppins:'Poppins', sans-serif;
+    --agdasima: 'Agdasima', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--Primary);
+}
+
+/*-------------navbar-----------------*/
+.main-nav{
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logo img{
+    width: 80px;
+    height: auto;
+}
+.menu{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+.main-menu__link{
+    color: var(--letras);
+    font-family: var(--poppins);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/*-------fin navbar----------------*/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.presentation{
+    width: 100%;
+    background-color: var(--Primary);
+}
+.portada{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+}
+.portada h1{
+    font-size: 3rem;
+    color: var(--letras);
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+p{
+    font-size: 1.2rem;
+    font-family: var(--poppins);
+    color: var(--letras);
+    font-weight: 800;
+    text-align: center;
+}
+.perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.perfil img{
+    padding-top:5rem ;
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+.programing{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.programing img{
+    width: 50%;
+    height: auto;
+}
+/*--------about----------*/
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--Primary);
+    flex-direction: column;
+    font-family: var(--poppins);
+}
+.about h2{
+    font-size: 2rem;
+}
+.about p{
+    padding: 0 20%;
+    color: var(--Primary);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/*--------skills---------*/
+.skills{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: var(--Primary);
+}
+.skills__title{
+    width: 100%;
+    height: 18rem;
+    background-color: var(--orange);
+    font-size: 2rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: var(--letras);
+    font-family: var(--poppins);
+    color: var(--Primary);
+    text-transform: uppercase;
+    border: none;
+}
+.skills_detail{
+    margin-top: -10rem;
+    background-color: var(--Primary);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--bordes);
+    border-radius: 1rem;
+}
+
+.tools, .languageP{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.tools img, .languageP img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.tools img{
+    width: 120px;
+}
+.tools{
+    border-right: 1px solid var(--bordes);
+}
+.title_tools{
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    font-family: var(--poppins);
+}
+.details_tools, .details_languages{
+    width: 80%;
+}
+.details_tools ul, .details_languages ul{
+    padding: 5rem 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/*-----projects-----*/
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    padding-top: 12rem;
+    
+}
+.title_project, .title_contact{
+width: 100%;
+padding: 2rem;
+display: flex;
+justify-content: center;
+}
+.title_project h2, .title_contact h2{
+    font-family: var(--poppins);
+    font-size: 2rem;
+}
+.detail_project{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    justify-content: space-around;
+
+}
+.article_project{
+    width: 25rem;
+    height: 17rem;
+    border-radius: 1rem;
+    border: 1px solid var(--bordes);
+}
+.article_project img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*-------Contact-----------*/
+.contact{
+    padding-top: 12rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+align-items: center;
+}
+.form_contact{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputs_contact{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 10px;
+}
+.inputs_contact label{
+    font-size: 1.2rem;
+    font-family: var(--poppins);
+}
+.inputs_contact .inputs{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--letras);
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    color: var(--letras);
+}
+.btn_submit{
+    background-color: var(--orange);
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    color: var(--Primary);
+    height: 60px;
+    border-radius: .5rem;
+}
+/*------footer-------*/
+footer{
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+    padding-bottom: 1rem;
+}
+.logo_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo_footer img{
+    background-color: var(--Primary);
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+}
+.red{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.red img{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+
+
+@media screen and (max-width:720px) {
+    /*-----------------------navbar-----------*/
+    .menu{
+        display: block;
+    }
+    .main-nav{
+        flex-direction: column;
+    }
+    .main-nav{
+        padding: 0;
+    }
+    .main-menu{
+        display: none;
+       width: 100%;
+        flex-direction: column;
+        padding: 2rem 0;
+        align-items: center;
+    }
+    .main-menu__show{
+        transition: .9s;
+        display: flex;
+    }
+    /*---------main-----------*/
+    main{
+        padding: 0;
+    }
+    /*---------presentation-----------*/
+    .portada{
+        height: 300px;
+    }
+    .portada h1{
+        font-size: 2.5rem;
+    }
+    p{
+        
+        font-size: 1rem;
+    }
+    .programing img{
+        width: 90%;
+    }
+    /*------about-------*/
+    .about h2{
+        font-size: 1.8rem;
+    }
+    .about p{
+        padding: 0 8%;
+    }
+    /*-----skills-----*/
+    .skills__title{
+        font-size: 1.5rem;
+    }
+    .skills_detail{
+        width: 90%;
+    }
+    .tools img, .languageP img{
+        width: 50px;
+        height: 50px;
+    }
+    .tools img{
+        width: 90px;
+    }
+    .title_tools h2{
+        font-size: 1.1rem;
+    }
+    .details_tools, .details_languages{
+        width: 95%;
+    }
+    .details_tools p, .details_languages p{
+        font-size: .8rem;
+    }
+    
+
+}
+
+@media screen and (max-width:480px){
+    .portada{
+        height: 200px;
+    }
+    .portada h1{
+        font-size: 1rem;
+    }
+    p{
+        
+        font-size: 0.8rem;
+    }
+    .about p{
+        padding: 0 10%;
+        font-size: 1rem;
+    }
+    .skills_detail{
+        flex-direction: column;
+    }
+    .tools{
+        border-bottom: 1px solid var(--bordes);
+    }
+    .inputs_contact{
+        width: 15rem;
+        padding: 0;
+    }
+    .inputs_contact label{
+        font-size: 1rem;
+    }
+    .inputs_contact input{
+        width: 100%;     
+        padding: .5rem;
+    }
+    .logo_footer img{
+
+        width: 70px;
+
+    }
+    .red{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .red img{
+        width: 30px;
+        height: 30px;
+    }
+}
